@@ -1,12 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2023</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .work {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .work img, .work video {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <p>Hello, World!</p>
+  <header>
+    <h1>2023</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#works">Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      안녕하세요, 저는 다양한 이미지와 짧은 영상 클립을 통해 감정을 표현하는 작업을 하고 있습니다.  
+      제 작품은 단순한 기록이 아니라, 순간의 분위기와 영감을 담아내는 스토리입니다.
+    </p>
+  </section>
+
+  <section id="works">
+    <h2>My Works</h2>
+    <div class="gallery">
+      <!-- 이미지 작품 -->
+      <div class="work">
+        <img src="work1.jpg" alt="작품 1">
+        <h3>작품 1: 바닷가의 기억</h3>
+        <p>
+          이 작품은 여름날 바닷가에서 느낀 자유로움과 설렘을 담아낸 사진입니다.  
+          파도 소리와 바람의 감촉이 마음을 가볍게 해주던 순간을 기록하고 싶었습니다.  
+          단순한 풍경이 아니라, 그날의 감정과 분위기를 함께 전달하는 것이 목표였습니다.
+        </p>
+      </div>
+
+      <!-- 짧은 영상 작품 -->
+      <div class="work">
+        <video controls poster="clip-thumbnail.jpg">
+          <source src="clip1.mp4" type="video/mp4">
+          브라우저가 video 태그를 지원하지 않습니다.
+        </video>
+        <h3>작품 2: 작업의 흐름</h3>
+        <p>
+          이 짧은 영상은 작품을 완성해가는 과정에서 느낀 몰입과 집중을 보여줍니다.  
+          작은 실수와 시행착오조차도 창작의 일부라는 것을 표현하고 싶었습니다.  
+          영상 속 순간들은 단순한 기록이 아니라, 나에게 영감을 준 감정의 조각들입니다.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: yourname@example.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 가연의 포트폴리오</p>
+  </footer>
 </body>
 </html>
